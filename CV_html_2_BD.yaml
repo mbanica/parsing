@@ -1,0 +1,130 @@
+
+dir Input : E:\job\proj\scanCV\in
+EJOBS:
+    romanian:
+        section separators : ['<p class=SectionTitle>INTERVIU ONLINE</p>','<p class=SectionTitle>obiectiv</p>','<p class=SectionTitle>experienta generala</p>','<p class=SectionTitle>experienta</p>','<p class=SectionTitle>educatie</p>','<p class=SectionTitle>aptitudini</p>','<p class=SectionTitle>mini interviu</p>'] 
+        general experience : experienta generala
+        identification section separators : 
+            - ["Adresa:" , ['3 Adresa','-'] ]   # sir separator ,eticheta raspunsului -( cu care crez fis test) , valoarrea raspunsului introdus
+            - ["Telefon:", ['4 Telefon','-'] ]
+            - ["Email:" ,  ['5 Email ','-']  ]
+            - ["Ultima accesare:",['6 Data ultimei accesari ','-'] ]
+            - ["Data modificare CV:",['7 Data modificarii CV','-']]
+            - ["Data ultimei aplicari:",['8 Data ultimei aplicari:','-']]
+            - ["ID:",['13 ID','-']]
+            - ["Permis conducere:",['14 Permis conducere:','-']]
+            - ["Stagiu militar:",['17 Stagiu militar','-']]
+        identification section test strings :
+            ID : ID
+            Permis : Permis
+            Data ob : Data ob
+            Stagiu : Stagiu
+            Data ultimei aplicari : "Data ultimei aplicari"
+            Permis conducere : "Permis conducere"
+        objectif section separators :
+            - ["Salariu:",['21 salariu  ','-']]
+            - ["Beneficii:",['22 beneficii ','-']]
+            - ["Tip job:",['23 tip job  ','-']]
+            - ["Departament:",['24 departament ','-']]
+            - ["Oras de domiciliu:",['25 oras domiciliu ','-']]
+            - ["Oras de lucru:",['26 oras lucru ','-']]
+            - ["Nivel Cariera:",['27 nivel cariera','-']]
+            - ["Disponibil:",['28 disponibil :','-']]
+        objectif section test strings :
+            Tip job : Tip job
+            Departament : Departament
+        education section separators :
+            - ["Studii:",['31 studii  ','-']]
+            - ["Cursuri, certificari & premii",['32 cursuri,certificari,premii ','-']]
+        abilities section separators :
+            - ["Limbi straine (nivel cunoastere):",['33 Limbi straine ','-']]
+            - ["Cunostinte PC:",['34 Cunostinte PC: ','-']]
+            - ["Alte cunostinte, aptitudini sau observatii relevante pentru CVul tau",['35 Alte cunostinte ', '-']]
+        abilities section test strings :
+            Limbi : Limbi
+        mini interview section separators :
+            - ["Care este cea mai mare realizare profesionala de pana acum?",['36 Cea mai mare realiz: ','-']]
+            - ["Care este cel mai mare esec profesional de pana acum?" ,     ['37 Cel mai mare esec: ','-']]
+            - ["Unde va vedeti peste 5 ani?" ,                               ['38 Peste 5 ani? ','-']]
+            - ["Care este cel mai mare vis pe care-l aveti? Care este idealul dumneavoastra in cariera?" , ['39 Vis, ideal: ','-']]
+            - ["Care este jobul care credeti ca vi s-ar potrivi cel mai bine?" , ['40 Job dorit : ','-']]
+            - ["Descrieti compania ideala in care ati dori sa lucrati?" , ['41 Compania dorita: ','-']]
+            - ["Care este departamentul in care doriti sa lucrati ( aveti dreptul la o singura alegere )? Explicati de ce credeti ca sunteti potrivit si de ce ati facut aceasta alegere!" , ['42 Departamentul dorit: ','-']]
+            - ["Detaliati personalitatea dumneavoastra ( hobbyuri, aspiratii, ce va motiveaza, stil de viata si lucru, etc )." , ['43 Personalitatea dvs: ','-']]
+        mini interview section test strings :
+            personalit : personalit
+    english :
+        section separators : ['<p class=SectionTitle>ONLINE INTERVIEW</p>','<p class=SectionTitle>objective</p>','<p class=SectionTitle>general experience</p>','<p class=SectionTitle>work experience</p>','<p class=SectionTitle>education</p>','<p class=SectionTitle>abilities</p>','<p class=SectionTitle>mini interview</p>'] 
+        general experience : general experience
+        identification section separators : 
+            - ["Address:" , ['3 Adresa','-'] ]   # sir separator ,eticheta raspunsului -( cu care crez fis test) , valoarrea raspunsului introdus
+            - ["Phone:", ['4 Telefon','-'] ]
+            - ["E-mail:" ,  ['5 Email ','-']  ]
+            - ["Last access:",['6 Data ultimei accesari ','-'] ]
+            - ["Last modified CV:",['7 Data modificarii CV','-']]
+            - ["CV Last Applied:",['8 Data ultimei aplicari:','-']]
+            - ["ID:",['13 ID','-']]
+            - ["Driving Licence",['14 Permis conducere:','-']]
+            - ["Military status",['17 Stagiu militar','-']]
+        identification section test strings :
+            ID : ID
+            Permis : Driving Licence
+            Data ob : Since
+            Stagiu : Military
+            Data ultimei aplicari : CV Last Applied
+            Permis conducere : Driving Licence
+        objectif section separators :
+            - ["Desired Salary:",['21 salariu  ','-']]
+            - ["Benefits:",['22 beneficii ','-']]
+            - ["Job Type:",['23 tip job  ','-']]
+            - ["Department:",['24 departament ','-']]
+            - ["Residence city:",['25 oras domiciliu ','-']]
+            - ["Working City:",['26 oras lucru ','-']]
+            - ["Career Level:",['27 nivel cariera','-']]
+            - ["Availability:",['28 disponibil :','-']]
+        objectif section test strings :
+            Tip job : Job Type
+            Departament : Department
+        education section separators :
+            - ["Studies:",['31 studii  ','-']]
+            - ["Courses, certificates & awards",['32 cursuri,certificari,premii ','-']]
+        abilities section separators :
+            - ["Foreign Languages (knowledge level):",['33 Limbi straine ','-']]
+            - ["PC Skills:",['34 Cunostinte PC: ','-']]
+            - ["Other abilities or details that are relevant to your CV",['35 Alte cunostinte ', '-']]
+        abilities section test strings :
+            Limbi : Languages
+        mini interview section separators :
+            - ["Which was your biggest professional achievement?",['36 Cea mai mare realiz: ','-']]
+            - ["Which was your biggest setback?" ,     ['37 Cel mai mare esec: ','-']]
+            - ["Where do you see yourself 5 years from now?" ,                               ['38 Peste 5 ani? ','-']]
+            - ["What's your biggest dream? Describe your ideal career" , ['39 Vis, ideal: ','-']]
+            - ["What job do you consider to suit you best?" , ['40 Job dorit : ','-']]
+            - ["Describe your ideal company." , ['41 Compania dorita: ','-']]
+            - ["Which is the department you would like to work in (you can make only one choice)? Explain why do you consider that you are right for the job and why you made that choice!" , ['42 Departamentul dorit: ','-']]
+            - ["Give a detailed description of your personality (hobbies, hopes, the things that motivate you, your lifestyle and workstyle, etc )." , ['43 Personalitatea dvs: ','-']]
+        mini interview section test strings :
+            personalit : personality
+        language translation :
+            arabic : araba
+            danish : daneza
+            dutch : olandeza
+            english : engleza
+            finnish : finlandeza
+            french : franceza
+            greek : greaca
+            german : germana
+            hungarian : maghiara
+            italian : italiana
+            norwegian : norvegiana
+            portuguese : portugheza
+            polish : poloneza
+            russian : rusa
+            serbian : sarba
+            spanish : spaniola
+            swedish : suedeza
+            turkish : turca
+BESTJOBS:
+    - xx yy z  : [ tabela, camp11 ,valoare]
+    - pp qq    : [ camp21 ,camp2 , valoare]
+        
